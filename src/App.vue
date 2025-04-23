@@ -1,12 +1,21 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 import Header from './components/Header.vue'
+import HeroSection from './components/HeroSection.vue'
+import Category from './components/Category.vue'
+import Trending from './components/Trending.vue'
 </script>
 
 <template>
   <div>
     <Header></Header>
+    <HeroSection />
+  </div>
+
+  <div>
+    <Category />
+  </div>
+  <div>
+    <Trending />
   </div>
   <!-- <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
