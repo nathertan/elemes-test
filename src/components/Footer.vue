@@ -1,4 +1,6 @@
-<template>THIS IS TRENDING SECTION</template>
+<template>
+  <footer>THIS IS FOOTER</footer>
+</template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
