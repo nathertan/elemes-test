@@ -5,7 +5,9 @@ import Header from './components/Header.vue'
 </script>
 
 <template>
-  <Header></Header>
+  <div>
+    <Header></Header>
+  </div>
   <!-- <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
