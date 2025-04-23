@@ -3,6 +3,7 @@ import Header from './components/Header.vue'
 import HeroSection from './components/HeroSection.vue'
 import Category from './components/Category.vue'
 import Trending from './components/Trending.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -16,6 +17,10 @@ import Trending from './components/Trending.vue'
   </div>
   <div>
     <Trending />
+  </div>
+
+  <div>
+    <Footer></Footer>
   </div>
   <!-- <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
