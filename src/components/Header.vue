@@ -1,6 +1,6 @@
 <template>
-  <header :class="['header', { scrolled: isScrolled }]">
-    <div class="header-logo">
+<header :class="isScrolled ? 'header scrolled' : 'header'">
+  <div class="header-logo">
       <img src="@/assets/Elemes-logo.svg" alt="elemes-logo" />
     </div>
     <nav class="header-nav">
@@ -26,11 +26,12 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const isScrolled = ref(false)
 
 const handleScroll = () => {
-  isScrolled.value = window.scrollY > 10
+  isScrolled.value = window.scrollY > 100
 }
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
+  handleScroll();
 })
 
 onUnmounted(() => {
@@ -40,7 +41,8 @@ onUnmounted(() => {
 
 <style scoped>
 .header {
-  position: sticky;
+  background: transparent;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
@@ -49,7 +51,6 @@ onUnmounted(() => {
   justify-content: space-between;
   width: 100%;
   padding: 2vh;
-  background: transparent !important;
   transition:
     background-color 0.3s ease,
     box-shadow 0.3s ease;

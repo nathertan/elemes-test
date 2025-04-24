@@ -35,7 +35,7 @@ export default defineComponent({
 <style scoped>
 .hero {
   background:
-    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)),
     url('@/assets/hero-background.jpg');
   background-size: cover;
   background-position: center;
