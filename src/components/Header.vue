@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header :class="['header', { scrolled: isScrolled }]">
     <div class="header-logo">
       <img src="@/assets/Elemes-logo.svg" alt="elemes-logo" />
     </div>
@@ -20,24 +20,44 @@
   </header>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
 
-export default defineComponent({
-  name: 'Header',
+const isScrolled = ref(false)
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 10
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
 })
 </script>
 
 <style scoped>
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   padding: 2vh;
+  background: transparent !important;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.header.scrolled {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-logo {
