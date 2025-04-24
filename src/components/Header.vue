@@ -41,7 +41,7 @@ export default defineComponent({
 }
 
 .header-logo {
-  padding-left: 116px;
+  margin-left: 10vw;
   width: 207px;
 }
 
@@ -81,7 +81,7 @@ export default defineComponent({
 .header-auth {
   display: flex;
   align-items: center;
-  padding-right: 15vw;
+  margin-right: 10vw;
   width: 215px;
   gap: 24px;
 }
@@ -92,16 +92,20 @@ export default defineComponent({
   color: #333;
   cursor: pointer;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .header-auth-register {
   background-color: #8bac3e;
   color: white;
   border: none;
-  border-radius: 999px;
+  border-radius: 100px;
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 10px 18px 10px 18px;
   white-space: nowrap;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
 }
 
 @media (min-width: 1024px) {
