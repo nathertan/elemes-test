@@ -38,11 +38,11 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import cupcake from '@/components/icons/cupcake.svg'
-import pizza from '@/components/icons/pizza.svg'
-import kebab from '@/components/icons/kebab.svg'
-import salmon from '@/components/icons/salmon.svg'
-import doughnut from '@/components/icons/doughnut.svg'
+import cupcake from '@/components/icons/category/cupcake.svg'
+import pizza from '@/components/icons/category/pizza.svg'
+import kebab from '@/components/icons/category/kebab.svg'
+import salmon from '@/components/icons/category/salmon.svg'
+import doughnut from '@/components/icons/category/doughnut.svg'
 
 const cards = [
   {
@@ -123,8 +123,8 @@ onMounted(() => {
 
 <style scoped>
 .category {
-  width: 100vw;
-  height: 80vh;
+  width: 100;
+  height: 60vh;
   padding-left: 4.75vw;
   padding-right: 4.75vw;
 }
@@ -233,7 +233,6 @@ onMounted(() => {
   justify-content: flex-end;
   padding-right: 7.5vw;
   gap: 10px;
-  align-self: right;
 }
 
 @media (min-width: 1024px) {
