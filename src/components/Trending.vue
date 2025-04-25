@@ -113,6 +113,7 @@ const cards = [
   height: 120vh;
   padding-left: 4.75vw;
   padding-right: 4.75vw;
+  margin-bottom: 12vh;
 }
 
 .title-wrapper {

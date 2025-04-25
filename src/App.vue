@@ -20,6 +20,12 @@ import Footer from './components/Footer.vue'
     <div>
       <Trending />
     </div>
+
+    <div>
+      <Footer></Footer>
+    </div>
+
+    <div class="watermark">© 2021 ELEMES ID. ALL RIGHTS RESERVED</div>
   </div>
 </template>
 
@@ -31,6 +37,15 @@ import Footer from './components/Footer.vue'
   top: 0;
   left: 0;
   overflow-y: hidden;
+}
+
+.watermark {
+  font-size: 12px;
+  color: #757575;
+  line-height: 16px;
+  display: flex;
+  align-self: center;
+  padding-bottom: 30px;
 }
 
 @media (min-width: 1024px) {
