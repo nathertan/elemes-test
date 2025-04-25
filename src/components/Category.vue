@@ -22,10 +22,10 @@ export default defineComponent({
 
 <style scoped>
 .category {
-  width: 100vw;
+  width: 100;
   height: 100vh;
-  margin-left: 4.75vw;
-  margin-right: 4.75vw;
+  padding-left: 4.75vw;
+  padding-right: 4.75vw;
 }
 
 .title-wrapper {

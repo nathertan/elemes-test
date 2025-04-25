@@ -1,6 +1,6 @@
 <template>
-<header :class="isScrolled ? 'header scrolled' : 'header'">
-  <div class="header-logo">
+  <header :class="isScrolled ? 'header scrolled' : 'header'">
+    <div class="header-logo">
       <img src="@/assets/Elemes-logo.svg" alt="elemes-logo" />
     </div>
     <nav class="header-nav">
@@ -31,7 +31,7 @@ const handleScroll = () => {
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
-  handleScroll();
+  handleScroll()
 })
 
 onUnmounted(() => {
@@ -49,7 +49,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   padding: 2vh;
   transition:
     background-color 0.3s ease,

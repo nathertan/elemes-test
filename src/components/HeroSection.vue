@@ -40,6 +40,7 @@ export default defineComponent({
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0;
   width: 100vw;
   height: 100vh;
 }

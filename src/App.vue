@@ -23,6 +23,10 @@ import Footer from './components/Footer.vue'
 .app-wrapper {
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
 }
 
 @media (min-width: 1024px) {
