@@ -123,7 +123,7 @@ onMounted(() => {
 
 <style scoped>
 .category {
-  width: 100;
+  width: 100vw;
   height: 80vh;
   padding-left: 4.75vw;
   padding-right: 4.75vw;

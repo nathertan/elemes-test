@@ -16,6 +16,10 @@ import Footer from './components/Footer.vue'
     <div>
       <Category />
     </div>
+
+    <div>
+      <Trending />
+    </div>
   </div>
 </template>
 
